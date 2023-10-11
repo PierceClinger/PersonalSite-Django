@@ -1,0 +1,115 @@
+.body-wrapper {
+    background-color: #252B48;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*** NavBar ***/
+.navbar-custom {
+    background-color: #252B48;
+    height: 10vh;
+}
+
+.navbar-brand-custom {
+    width: calc(8vw + 4em);
+}
+
+.navbar-nav {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.nav-icon {
+    color: #F7E987;
+    font-size: calc(1vw + 1.5em);
+    padding-right: 1em;
+    transition: 0.3s;
+}
+
+.nav-icon:hover {
+    animation-name: nav-icon;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-icon {
+    to {color: #f5efc0;}
+}
+
+/*** Projects ***/
+.projects-title {
+    color: #F7E987;
+    font-size: 3em;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.projects-subtitle {
+    color: #F7E987;
+    font-family: 'Signika Negative', sans-serif;
+    padding-bottom: 0.5em;
+    padding-top: 1.5em;
+}
+
+.accordion {
+    font-family: 'Signika Negative', sans-serif;
+    --bs-accordion-border-color: #252B48;
+    --bs-accordion-active-bg: #F7E987;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    margin-bottom: 1em;
+}
+
+.accordion-button {
+    background-color: #445069;
+    color: white;
+}
+
+.accordion-body {
+    background-color: #445069;
+    color: white;
+}
+
+.projects-img {
+    width: 100%;
+    border-style: none;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.link-btn {
+    background-color: #F7E987;
+    width: 5em;
+    height: 2em;
+    margin-top: 0.75em;
+
+    color: #445069;
+    font-size: 1.5em;
+    font-family: 'Signika Negative', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-style: none;
+    border-radius: 5px;
+}
+
+.link-btn:hover {
+    animation-name: link-btn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-btn {
+    to {background-color: #f5efc0;}
+}

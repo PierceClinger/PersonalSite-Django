@@ -1,0 +1,37 @@
+Pierce W. Clinger
+Computer Science
+Address: XXXXXXXXXXXX Lexington, SC 29072
+Phone: (XXX) XXX-XXXX
+Email: me@pierceclinger.com
+Website: Pierceclinger.com
+Proactive and innovative Computer Science graduate from the University of South Carolina.
+Looking to apply my programing experience and knowledge of computer science to establish
+experience and become an asset in my field.
+Skills
+Java Django C++ HTML/CSS SQL
+Linux Python VirtualBox Microsoft Git/GitHub
+Employment History
+ 8/2020 – Present Doko Station Pub and Eatery, Blythewood, SC
+ 4/2020 – 8/2020 Infrastructure Consulting and Engineering, Columbia, SC
+ 1/2013 – 4/2020 Old Mill Brew Pub, Lexington, SC
+Education
+ 8/2020 – 5/2023 University of South Carolina, Columbia, SC
+Bachelor’s in Computer Science
+Relevant Courses
+o Databases (CSCE520)
+o Artificial Intelligence (CSCE580)
+o Data Structures and Algorithms (CSCE311)
+ 8/2018 – 4/2020 Midlands Technical College, Columbia, SC
+General Engineering
+Cumulative Grade Point Average: 3.7/4.0
+Projects
+ Flight/Hotel Booking System (Software Engineering class)
+o Coded in Java and runs from command line. Used JSONParser to import and export
+updated flight/hotel data. Heavy use of OOP.
+o Worked with group and questioned client (professor) for features.
+ Coin Trader – Cryptocurrency Paper Trading Web App (Capstone class)
+o Coded in Python using Django as REST API. Imported data from Coin Base API and
+implemented background tasks/cron jobs. Front-end was created using HTML, CSS,
+and Bootstrap 5.
+o Worked with a group of 5 peers and interacted with code through Github. Milestones
+were required to be completed by deadlines. 

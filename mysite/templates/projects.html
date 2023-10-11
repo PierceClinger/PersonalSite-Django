@@ -1,0 +1,275 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title-->
+    <title>Projects</title>
+
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/png" href="{% static 'Media/Brand_Circle.png' %}">
+
+    <!-- Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="{% static 'CSS/projects_styles.css' %}" type="text/css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/72b8742980.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="body-wrapper">
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <img class="navbar-brand-custom" src="{% static 'Media/Brand.png' %}" alt="Logo">
+                    </a>
+                </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'email' %}"><i class="fa-regular fa-envelope nav-icon nav-item"></i></a></li>
+                        <li><a href="https://www.instagram.com/pierceclinger/"><i class="fa-brands fa-instagram nav-icon nav-item"></i></a></li>
+                        <li><a href="https://github.com/PierceClinger"><i class="fa-brands fa-github nav-icon nav-item"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/pierce-clinger-6889481a7/"><i class="fa-brands fa-linkedin-in nav-icon nav-item"></i></a></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <!-- Projects -->
+        <div class="container mt-5">
+            <h1 class="projects-title">Projects</h1>
+
+            <h3 class="projects-subtitle">Web Design</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wd01" aria-expanded="false" aria-controls="collapseOne">
+                      Top Water Ponds
+                    </button>
+                  </h2>
+                  <div id="wd01" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Description</h5>
+                          <p>This was a website I created for some friends who started a pond mantainance business in Lexington, SC. The project involved me meeting with them, gathering what they wished to achieve with their business and website, and executing their needs. I coded the entire website using HTML, CSS, and Bootstrap 5 framework. After creating the basic design of the website, I discussed possible hosting plans where we decided on A2 Hosting's shared plan. I then deployed the website, set up a business email through A2 Hosting, and worked on some basic SEO for the website. Through this project I gained a better understanding of website design, interacting with clients, deploying websites, and SEO.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="projects-img" src="{% static 'Media/TopWaterPonds_preview.PNG' %}" alt="Top Water Ponds website preview">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Skills</h5>
+                          <p>HTML, CSS, Bootstrap 5, Hosting setup, Email setup, Client interaction, SEO</p>
+                        </div>
+                        <div class="col-md-4 center-div">
+                          <a href="https://topwaterponds.com/"><span class="link-btn">Link</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wd02" aria-expanded="false" aria-controls="collapseTwo">
+                      TinDog
+                    </button>
+                  </h2>
+                  <div id="wd02" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Description</h5>
+                          <p>I took a Udemy course which covered many web development topics, including the use of Bootstrap framework. One of the projects in the course was creating a TinDog website through the use of Bootstrap. This was an extremely useful project to me because I learned the basics of Bootstrap components and how to utilize the grid system. I also picked up helpful tips to enhance the design of websites. The project was then hosted on Github pages for easy access.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="projects-img" src="{% static 'Media/TinDog_preview.PNG' %}" alt="TinDog website preview">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Skills</h5>
+                          <p>HTML, CSS, Bootstrap 5, Github Pages</p>
+                        </div>
+                        <div class="col-md-4 center-div">
+                          <a href="https://pierceclinger.github.io/TinDog/"><span class="link-btn">Link</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wd03" aria-expanded="false" aria-controls="collapseThree">
+                      My Website
+                    </button>
+                  </h2>
+                  <div id="wd03" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Description</h5>
+                          <p>I created this website to be a virtual resume that houses all of my credentials and information, as well as demonstrate some of my web development/design skills. By creating this website, I have further improved some of my web development skills and have gained a better understand of Bootstrap and it's grid system.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="projects-img" src="{% static 'Media/MyWebsite_preview.PNG' %}" alt="My website preview">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Skills</h5>
+                          <p>HTML, CSS, Bootstrap 5, Hosting setup, Email setup</p>
+                        </div>
+                        <div class="col-md-4 center-div">
+                          <a href="https://pierceclinger.com/"><span class="link-btn">Link</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="projects-subtitle">Programming Projects</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pp01" aria-expanded="false" aria-controls="collapseOne">
+                      Java LocalHost Group Chat Server and Client
+                    </button>
+                  </h2>
+                  <div id="pp01" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Description</h5>
+                          <p>One of the projects we were required to complete for the Networks class at UofSC was a Java-based groupchat server and client that can run off your local machine. Being my first networking class, I struggled with this one a bit, but learned a lot of important concepts that I have since used in personal projects.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="projects-img" src="{% static 'Media/GroupChat_preview.PNG' %}" alt="Java group chat preview">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Skills</h5>
+                          <p>Java, Networking, JDK</p>
+                        </div>
+                        <div class="col-md-4 center-div">
+                          <a href="https://github.com/PierceClinger/Networking/tree/master"><span class="link-btn">Link</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pp02" aria-expanded="false" aria-controls="collapseTwo">
+                      Java Triangle Fractals
+                    </button>
+                  </h2>
+                  <div id="pp02" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Description</h5>
+                          <p>This was just a simple assingment that we did in Algorithmic Design II using Java to display fractals, but I thought it was a lot of fun and pretty cool. I also learned how to draw things using Java so I learned something too.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="projects-img" src="{% static 'Media/TriangleFractals_preview.PNG' %}" alt="Java triangle fractals preview">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Skills</h5>
+                          <p>Java, JFrame</p>
+                        </div>
+                        <div class="col-md-4 center-div">
+                          <a href="https://github.com/PierceClinger/Java-TriangleFractals"><span class="link-btn">Link</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pp03" aria-expanded="false" aria-controls="collapseThree">
+                      Java Flight Booking System
+                    </button>
+                  </h2>
+                  <div id="pp03" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Description</h5>
+                          <p>In our Software Engineering class we were tasked with building a flight/hotel booking system over the length of the semester with a small group. This had to of been one of the most labor intensive but also rewarding projects I have ever participated in. Our flight booking system is written completely in Java and is capable of reading flight/hotel data stored in JSON files, updating the JSONs when a booking is made, and writing back to the file. It also allows for users to login/create accounts so they can store and view previous bookings. While learning JSONParser and other libraries seemed to be my biggest take away from this project, looking back, I would say that my strong understanding of OOP is directly due to this project. It was also nice working with a group, where we learned how to work with others and divide up the work load.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="projects-img" src="{% static 'Media/FlightBookingSystem_preview.PNG' %}" alt="Flight booking system preview">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Skills</h5>
+                          <p>Java, JSONParser, Group communication, Object oriented programming, Client interaction</p>
+                        </div>
+                        <div class="col-md-4 center-div">
+                          <a href="https://github.com/PierceClinger/FlightBookingSystem"><span class="link-btn">Link</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pp04" aria-expanded="false" aria-controls="collapseThree">
+                      Coin Trader - Cryptocurrency Paper Trading Web Application (Capstone)
+                    </button>
+                  </h2>
+                  <div id="pp04" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Description</h5>
+                          <p>For our Capstone project we decided to create a cryptocurrency paper trading web application called Coin Trader. This application allows for users to create accounts and play around with trading crypto without the risk of losing your hard earned money. This was so much fun to create and allowed us to work with Django, which was brand new to all of us. The application itself was programmed in python, but also required a front-end which was coded in basic HTML and CSS. There was also some knowledge in SQL required since we needed to store all of our data in the Django database. I specifically worked on the front-end, importing the data from the Coin Base API, storing/accessing the data, creating the graphs, and also implementing background tasks (multiple threads) to allow for data to be imported while users access the app. This was by far my favorite project I have orked on due to having an awesome group and constantly learning new things. While the code may seem a little sloppy, we succeeded in creating the desired application with a framework we had never worked with before.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="projects-img" src="{% static 'Media/CoinTrader_preview.PNG' %}" alt="CoinTrader preview">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h5>Skills</h5>
+                          <p>Python, Django, SQL, HTML, CSS, Group communication, API interaction, Importing data, Background tasks</p>
+                        </div>
+                        <div class="col-md-4 center-div">
+                          <a href="https://github.com/SCCapstone/TheWaterCoolers"><span class="link-btn">Link</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    </div>
+
+</body>
+</html>

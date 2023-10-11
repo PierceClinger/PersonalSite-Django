@@ -1,0 +1,175 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title-->
+    <title>Pierce Clinger | Programmer and Web Designer</title>
+
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/png" href="{% static 'Media/Brand_Circle.png' %}">
+
+    <!-- Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="{% static 'CSS/index_styles.css' %}" type="text/css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/72b8742980.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="body-wrapper">
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <img class="navbar-brand-custom" src="{% static 'Media/Brand.png' %}" alt="Logo">
+                    </a>
+                </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'email' %}"><i class="fa-regular fa-envelope nav-icon nav-item"></i></a></li>
+                        <li><a href="https://www.instagram.com/pierceclinger/"><i class="fa-brands fa-instagram nav-icon nav-item"></i></a></li>
+                        <li><a href="https://github.com/PierceClinger"><i class="fa-brands fa-github nav-icon nav-item"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/pierce-clinger-6889481a7/"><i class="fa-brands fa-linkedin-in nav-icon nav-item"></i></a></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <!-- Main Section -->
+        <div class="container main-container">
+            <div class="row main">
+                <div class="col">
+                    <h1 class="main-text01">I'm Pierce, a Programmer and Web Dev.</h1>
+                    <h3 class="main-text02">Feel free to look around and check out my stuff,<br>If you have any questions then please contact me.</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About Me -->
+        <div class="container about-container">
+            <div class="row about">
+                <div class="col center-div">
+                    <div class="card card-custom01">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-custom01">About Me</h5>
+                            <p class="card-text card-text-custom01">I am a recent <a class="text-emphasis" href="https://sc.edu/">Computer Science graduate from the University of South Carolina</a> who is currently looking for a position to apply my knowledge and further improve my computer skills. Aside from my education and career path, my family owns the <a class="text-emphasis" href="https://www.oldmillbrewpub.net/">Old Mill Brew Pub</a> in Lexington, SC and <a class="text-emphasis" href="https://www.dokostation.net/">Doko Station Pub and Eatery</a> in Blythewood, SC which is where I currently work. In my free time I enjoy watching movies, cooking new foods and trying new beers, hanging out with my girlfriend, playing with my dog &#40;His name is Jimi Hendrix, he's really cute&#41;, and trying to paint. I also recently got into making some music using FLStudios. While I have a lot of hobbies, my true passion in life is traveling. I have traveled to Europe several times, been to over 20 states in the US, and have even been to Haiti for a mission trip. Below are some of my skills pertaining to computer science if you are interested.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="container skill-container">
+            <div class="row skill">
+                <div class="col-lg-3 center-div">
+                    <div class="card card-custom02">
+                        <i class="fa-solid fa-code fa-5x card-img-top card-icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title card-title-custom02">Languages and Frameworks</h5>
+                            <p class="card-text card-text-custom02">I have worked extensively with languages like Python, Java, C++, JavaScript, SQL, HTML/CSS, and even some Haskell, R, and MatLab. I also have experience in webapp development using Django with a focus on importing data from APIs and template design. <br>&nbsp;<br>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 center-div">
+                    <div class="card card-custom02">
+                        <i class="fa-solid fa-microchip fa-5x card-img-top card-icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title card-title-custom02">Computer Hardware and Operating Systems</h5>
+                            <p class="card-text card-text-custom02">I have built/upgraded several computers, worked with microcontrollers and microprocessors like Arduino and Raspberry Pis, and even built a 3D printer (Ender-3 pro). My operating system experience has mainly been with Windows 7 - 10, but I have also used Linux based OS like Ubuntu and Tails.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 center-div">
+                    <div class="card card-custom02">
+                        <i class="fa-solid fa-brain fa-5x card-img-top card-icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title card-title-custom02">Mathematics and Problem Solving</h5>
+                            <p class="card-text card-text-custom02">My knowledge of mathematics mainly came from college where I gained a strong understanding of Algebra and Calculus. I also learned some about other math fields like statistics and geometry. Due to my major being Computer Science, I worked with and excelled in logic based classes which teach problem solving.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 center-div">
+                    <div class="card card-custom02">
+                        <i class="fa-solid fa-comment fa-5x card-img-top card-icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title card-title-custom02">Communication</h5>
+                            <p class="card-text card-text-custom02">For the past 10 years I have worked in the service industry, teaching me important communication skills not only with coworkers, but also with customers. I have learned how to communicate with customers/clients to acheive their needs as well as defusing heated situations. College has also taught me written communication and public speaking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="container">
+            <div class="row">
+                <div class="col center-div">
+                    <div class="divider01"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Misc. -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 center-div">
+                    <a href="{% url 'projects' %}">
+                        <span class="misc-circle">
+                            <h1 class="misc-header">Projects</h1>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4 center-div">
+                    <a href="{% static 'Media/PierceClinger_Resume_Hidden.pdf' %}">
+                        <span class="misc-circle">
+                            <h1 class="misc-header">Resume</h1>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4 center-div">
+                    <a href="#">
+                        <span class="misc-circle">
+                            <h1 class="misc-header">Personal</h1>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="container">
+            <div class="row">
+                <div class="col center-div">
+                    <div class="divider02"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    </div>
+
+</body>
+</html>

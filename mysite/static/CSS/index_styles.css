@@ -1,0 +1,182 @@
+.body-wrapper {
+    overflow-x: hidden;
+    background-color: #252B48;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider01 {
+    background-color: #f7ea8700;
+    width: 100%;
+    height: 1em;
+    border:#F7E987 0.25em;
+    border-style: solid solid none solid;
+    margin-top: 2em;
+}
+
+.divider02 {
+    background-color: #f7ea8700;
+    width: 100%;
+    height: 1em;
+    border:#F7E987 0.25em;
+    border-style: none solid solid solid;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*** NavBar ***/
+.navbar-custom {
+    background-color: #252B48;
+    height: 10vh;
+}
+
+.navbar-brand-custom {
+    width: calc(8vw + 4em);
+}
+
+.navbar-nav{
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.nav-icon {
+    color: #F7E987;
+    font-size: calc(1vw + 1.5em);
+    padding-right: 1em;
+    transition: 0.3s;
+}
+
+.nav-icon:hover {
+    animation-name: nav-icon;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-icon {
+    to {color: #f5efc0;}
+}
+
+/*** Main ***/
+.main-container {
+    background-color: #252B48;
+    height: 35vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-text01 {
+    color: #F7E987;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: calc(3vw + 0.75em);
+}
+
+.main-text02 {
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: calc(1vw + 0.75em);
+    padding-top: 0.5em;
+}
+
+/*** About Me ***/
+.about-container {
+    background-color: #252B48;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.card-custom01 {
+    background-color:#445069;
+    width: 100%;
+}
+
+.card-title-custom01 {
+    color:#F7E987;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+}
+
+.card-text-custom01 {
+    color:white;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.text-emphasis {
+    color: #F7E987;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*** Skill ***/
+.skill-container {
+    background-color:#252B48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-custom02 {
+    background-color:#445069;
+    width: 22em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.card-icon {
+    color:#F7E987;
+    padding-top: 0.2em;
+}
+
+.card-title-custom02 {
+    color:white;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+}
+
+.card-text-custom02 {
+    color:white;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/*** Misc ***/
+
+.misc-circle {
+    background-color:#445069;
+    width: 15em;
+    height: 15em;
+    border-style: none;
+    border-radius: 18em;
+    margin-top: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.misc-circle:hover {
+    animation-name: misc-circle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes misc-circle {
+    to {background-color:#445069a9;}
+}
+
+.misc-header {
+    color: #F7E987;
+    font-family: 'Signika Negative', sans-serif;
+}
